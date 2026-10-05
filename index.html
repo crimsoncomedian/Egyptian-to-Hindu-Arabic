@@ -42,10 +42,8 @@
     body {
       margin: 0;
       min-height: 100vh;
-
       background: var(--page-bg);
       color: var(--text);
-
       font-family:
         -apple-system,
         BlinkMacSystemFont,
@@ -68,36 +66,22 @@
 
     .card {
       padding: 22px;
-
       background: var(--card);
-
       border: 1px solid var(--border);
       border-radius: 18px;
-
       box-shadow: var(--shadow);
     }
 
-    /* ==================================================
-       PROMPT
-       ================================================== */
-
     .prompt {
       text-align: center;
-
       color: var(--muted);
-
       font-size: 0.96rem;
     }
-
-    /* ==================================================
-       EGYPTIAN DISPLAY
-       ================================================== */
 
     .egyptian-display {
       display: flex;
       align-items: center;
       justify-content: center;
-
       gap: 11px;
       flex-wrap: wrap;
 
@@ -108,7 +92,6 @@
 
       border: 1px solid var(--border);
       border-radius: 12px;
-
       background: var(--panel);
     }
 
@@ -116,7 +99,6 @@
       display: flex;
       align-items: center;
       justify-content: center;
-
       gap: 2px;
       flex-wrap: wrap;
 
@@ -124,32 +106,21 @@
 
       border: 1px solid var(--border);
       border-radius: 8px;
-
       background: var(--card);
     }
 
     .zero-display {
       text-align: center;
-
       color: var(--muted);
-
       font-size: 0.88rem;
       line-height: 1.45;
     }
 
-    /* ==================================================
-       ANSWER
-       ================================================== */
-
     .answer-label {
       display: block;
-
       margin-bottom: 7px;
-
       text-align: center;
-
       color: var(--muted);
-
       font-size: 0.86rem;
       font-weight: 650;
     }
@@ -172,50 +143,36 @@
       color: var(--text);
 
       text-align: center;
-
       font-size: 1.4rem;
       font-weight: 700;
     }
 
     .answer-input:focus {
       outline: none;
-
       border-color: var(--blue);
-
       box-shadow:
         0 0 0 3px rgba(37, 99, 235, 0.12);
     }
 
-    /* ==================================================
-       BUTTONS
-       ================================================== */
-
     .actions {
       display: flex;
       justify-content: center;
-
       gap: 9px;
       flex-wrap: wrap;
-
       margin-top: 18px;
     }
 
     .button {
       min-height: 42px;
-
       padding: 8px 15px;
-
       border-radius: 9px;
-
       font-weight: 700;
-
       cursor: pointer;
     }
 
     .primary {
       background: var(--blue);
       color: white;
-
       border: 1px solid var(--blue);
     }
 
@@ -226,7 +183,6 @@
     .secondary {
       background: var(--card);
       color: var(--text);
-
       border: 1px solid var(--border);
     }
 
@@ -239,63 +195,42 @@
       cursor: default;
     }
 
-    /* ==================================================
-       FEEDBACK
-       ================================================== */
-
     .feedback {
       display: none;
-
       margin-top: 16px;
-
       border-radius: 11px;
-
       overflow: hidden;
-
       line-height: 1.45;
     }
 
     .feedback.correct {
       display: block;
-
       padding: 14px 16px;
-
       background: var(--green-bg);
       color: var(--green);
-
       border: 1px solid var(--green-border);
     }
 
     .feedback.incorrect {
       display: block;
-
       background: var(--red-bg);
       color: var(--text);
-
       border: 1px solid var(--red-border);
     }
 
     .feedback-head {
       padding: 14px 16px;
-
       color: var(--red);
     }
 
-    /* ==================================================
-       EXPLANATION
-       ================================================== */
-
     .explanation {
       padding: 15px 16px;
-
       border-top: 1px solid var(--red-border);
-
       background: var(--card);
     }
 
     .explanation-title {
       margin-bottom: 10px;
-
       font-weight: 750;
     }
 
@@ -311,14 +246,12 @@
         minmax(90px, 0.8fr);
 
       align-items: center;
-
       gap: 10px;
 
       padding: 10px 12px;
 
       border: 1px solid var(--border);
       border-radius: 9px;
-
       background: var(--panel);
     }
 
@@ -326,63 +259,45 @@
       display: flex;
       align-items: center;
       justify-content: center;
-
       gap: 2px;
       flex-wrap: wrap;
     }
 
     .row-math {
       text-align: center;
-
       font-weight: 750;
     }
 
     .sum-box {
       margin-top: 11px;
-
       padding: 11px;
-
       border-radius: 9px;
-
       background: var(--blue-soft);
-
       text-align: center;
-
       font-weight: 800;
       line-height: 1.55;
     }
 
-    /* ==================================================
-       REFERENCE
-       ================================================== */
-
     .reference {
       margin-top: 20px;
       padding-top: 14px;
-
       border-top: 1px solid var(--border);
     }
 
     .reference-title {
       margin-bottom: 9px;
-
       text-align: center;
-
       color: var(--muted);
-
       font-size: 0.76rem;
       font-weight: 750;
-
       text-transform: uppercase;
       letter-spacing: 0.04em;
     }
 
     .reference-grid {
       display: grid;
-
       grid-template-columns:
         repeat(4, minmax(0, 1fr));
-
       gap: 8px;
     }
 
@@ -391,16 +306,13 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-
       gap: 4px;
 
       min-height: 84px;
-
       padding: 7px;
 
       border: 1px solid var(--border);
       border-radius: 8px;
-
       background: var(--panel);
 
       font-size: 0.76rem;
@@ -410,16 +322,10 @@
     svg {
       display: block;
       overflow: visible;
-
       color: var(--text);
     }
 
-    /* ==================================================
-       RESPONSIVE
-       ================================================== */
-
     @media (max-width: 650px) {
-
       .app {
         width: min(100% - 18px, 1050px);
         margin: 18px auto;
@@ -437,7 +343,6 @@
       .break-row {
         grid-template-columns: 1fr;
       }
-
     }
   </style>
 </head>
@@ -448,28 +353,14 @@
 
   <section class="card">
 
-    <!-- ==================================================
-         PROMPT
-         ================================================== -->
-
     <div class="prompt">
       Write this Egyptian numeral as a Hindu-Arabic numeral.
     </div>
-
-
-    <!-- ==================================================
-         EGYPTIAN NUMERAL
-         ================================================== -->
 
     <div
       id="egyptianDisplay"
       class="egyptian-display">
     </div>
-
-
-    <!-- ==================================================
-         ANSWER
-         ================================================== -->
 
     <label
       class="answer-label"
@@ -478,7 +369,6 @@
     </label>
 
     <div class="input-wrap">
-
       <input
         id="answerInput"
         class="answer-input"
@@ -486,13 +376,7 @@
         inputmode="numeric"
         autocomplete="off"
         placeholder="Answer">
-
     </div>
-
-
-    <!-- ==================================================
-         CONTROLS
-         ================================================== -->
 
     <div class="actions">
 
@@ -512,21 +396,11 @@
 
     </div>
 
-
-    <!-- ==================================================
-         FEEDBACK
-         ================================================== -->
-
     <div
       id="feedback"
       class="feedback"
       aria-live="polite">
     </div>
-
-
-    <!-- ==================================================
-         REFERENCE
-         ================================================== -->
 
     <div class="reference">
 
@@ -547,160 +421,88 @@
 
 
 <script>
-
 (() => {
 
-  /*
-    ==================================================
-    DOM
-    ==================================================
-  */
-
   const egyptianDisplay =
-    document.getElementById(
-      "egyptianDisplay"
-    );
-
+    document.getElementById("egyptianDisplay");
 
   const answerInput =
-    document.getElementById(
-      "answerInput"
-    );
-
+    document.getElementById("answerInput");
 
   const checkButton =
-    document.getElementById(
-      "checkButton"
-    );
-
+    document.getElementById("checkButton");
 
   const nextButton =
-    document.getElementById(
-      "nextButton"
-    );
-
+    document.getElementById("nextButton");
 
   const feedback =
-    document.getElementById(
-      "feedback"
-    );
-
+    document.getElementById("feedback");
 
   const referenceGrid =
-    document.getElementById(
-      "referenceGrid"
-    );
+    document.getElementById("referenceGrid");
 
 
-  /*
-    ==================================================
-    VALUES
-    ==================================================
-  */
+  const values = [
+    1000000,
+    100000,
+    10000,
+    1000,
+    100,
+    10,
+    1
+  ];
 
-  const values =
-    [
-      1000000,
-      100000,
-      10000,
-      1000,
-      100,
-      10,
-      1
-    ];
-
-
-  const labels =
-    [
-      "1,000,000",
-      "100,000",
-      "10,000",
-      "1,000",
-      "100",
-      "10",
-      "1"
-    ];
+  const labels = [
+    "1,000,000",
+    "100,000",
+    "10,000",
+    "1,000",
+    "100",
+    "10",
+    "1"
+  ];
 
 
-  /*
-    ==================================================
-    STATE
-    ==================================================
-  */
+  let targetNumber = 1;
+  let previousNumber = null;
 
-  let targetNumber =
-    1;
-
-
-  let previousNumber =
-    null;
-
-
-  /*
-    ==================================================
-    EGYPTIAN SYMBOLS
-    ==================================================
-  */
 
   function symbolSvg(
     value,
     size = 56
   ) {
 
-    const common =
-      `
-        width="${size}"
-        height="${size}"
-        viewBox="0 0 64 64"
-        aria-hidden="true"
-      `;
+    const common = `
+      width="${size}"
+      height="${size}"
+      viewBox="0 0 64 64"
+      aria-hidden="true"
+    `;
+
+    const line = `
+      stroke="currentColor"
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    `;
 
 
-    const line =
-      `
-        stroke="currentColor"
-        fill="none"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      `;
-
-
-    /*
-      1
-    */
-
-    if (
-      value ===
-      1
-    ) {
-
+    /* 1 */
+    if (value === 1) {
       return `
         <svg ${common}>
-
           <path
-            d="
-              M32 9
-              L32 55
-            "
+            d="M32 9 L32 55"
             ${line}
             stroke-width="3.3">
           </path>
-
         </svg>
       `;
-
     }
 
 
-    /*
-      10
-    */
-
-    if (
-      value ===
-      10
-    ) {
-
+    /* 10 */
+    if (value === 10) {
       return `
         <svg ${common}>
 
@@ -726,20 +528,11 @@
 
         </svg>
       `;
-
     }
 
 
-    /*
-      100
-      Spiral
-    */
-
-    if (
-      value ===
-      100
-    ) {
-
+    /* 100 - spiral */
+    if (value === 100) {
       return `
         <svg ${common}>
 
@@ -759,20 +552,11 @@
 
         </svg>
       `;
-
     }
 
 
-    /*
-      1,000
-      Lotus
-    */
-
-    if (
-      value ===
-      1000
-    ) {
-
+    /* 1,000 - lotus */
+    if (value === 1000) {
       return `
         <svg ${common}>
 
@@ -791,16 +575,11 @@
             stroke-width="3">
           </path>
 
-
           <path
-            d="
-              M31 33
-              L31 49
-            "
+            d="M31 33 L31 49"
             ${line}
             stroke-width="3.3">
           </path>
-
 
           <path
             d="
@@ -810,7 +589,6 @@
             ${line}
             stroke-width="3">
           </path>
-
 
           <path
             d="
@@ -823,32 +601,26 @@
             stroke-width="3">
           </path>
 
-
           <path
-            d="
-              M22 55
-              L40 55
-            "
+            d="M22 55 L40 55"
             ${line}
             stroke-width="3.2">
           </path>
 
         </svg>
       `;
-
     }
 
 
     /*
       10,000
-      Bent pointing finger
+      Finger:
+      vertical lower part,
+      45-degree bend,
+      straight bottom,
+      no notch.
     */
-
-    if (
-      value ===
-      10000
-    ) {
-
+    if (value === 10000) {
       return `
         <svg ${common}>
 
@@ -859,15 +631,12 @@
               L37 7
               L43 12
               L33 26
-              L33 49
-              L38 49
-              L38 55
+              L33 55
               Z
             "
             ${line}
             stroke-width="3">
           </path>
-
 
           <path
             d="
@@ -880,20 +649,11 @@
 
         </svg>
       `;
-
     }
 
 
-    /*
-      100,000
-      Tadpole / frog
-    */
-
-    if (
-      value ===
-      100000
-    ) {
-
+    /* 100,000 - tadpole / frog */
+    if (value === 100000) {
       return `
         <svg ${common}>
 
@@ -911,7 +671,6 @@
             stroke="none">
           </path>
 
-
           <ellipse
             cx="43"
             cy="25"
@@ -919,7 +678,6 @@
             ry="1.8"
             fill="white">
           </ellipse>
-
 
           <path
             d="
@@ -930,16 +688,11 @@
             stroke-width="3.2">
           </path>
 
-
           <path
-            d="
-              M18 49
-              L12 49
-            "
+            d="M18 49 L12 49"
             ${line}
             stroke-width="3.2">
           </path>
-
 
           <path
             d="
@@ -949,7 +702,6 @@
             ${line}
             stroke-width="3">
           </path>
-
 
           <path
             d="
@@ -962,15 +714,10 @@
 
         </svg>
       `;
-
     }
 
 
-    /*
-      1,000,000
-      Kneeling person
-    */
-
+    /* 1,000,000 - kneeling person */
     return `
       <svg ${common}>
 
@@ -987,16 +734,11 @@
           stroke-width="3">
         </path>
 
-
         <path
-          d="
-            M32 27
-            L32 43
-          "
+          d="M32 27 L32 43"
           ${line}
           stroke-width="3.2">
         </path>
-
 
         <path
           d="
@@ -1008,7 +750,6 @@
           stroke-width="3.2">
         </path>
 
-
         <path
           d="
             M33 31
@@ -1018,7 +759,6 @@
           ${line}
           stroke-width="3.2">
         </path>
-
 
         <path
           d="
@@ -1030,7 +770,6 @@
           stroke-width="2.7">
         </path>
 
-
         <path
           d="
             M49 17 L44 11
@@ -1040,7 +779,6 @@
           ${line}
           stroke-width="2.7">
         </path>
-
 
         <path
           d="
@@ -1052,7 +790,6 @@
           stroke-width="3.2">
         </path>
 
-
         <path
           d="
             M32 43
@@ -1062,7 +799,6 @@
           ${line}
           stroke-width="3.2">
         </path>
-
 
         <path
           d="
@@ -1075,183 +811,87 @@
 
       </svg>
     `;
-
   }
 
 
-  /*
-    ==================================================
-    RANDOM NUMBER GENERATION
-    ==================================================
-
-    Most digits are 0–5 to keep the
-    number of repeated symbols manageable.
-
-    ==================================================
-  */
-
   function weightedDigit() {
-
-    if (
-      Math.random() <
-      0.88
-    ) {
-
+    if (Math.random() < 0.88) {
       return Math.floor(
-        Math.random() *
-        6
+        Math.random() * 6
       );
-
     }
-
 
     return (
       6 +
       Math.floor(
-        Math.random() *
-        4
+        Math.random() * 4
       )
     );
-
   }
 
 
   function generateNumber() {
 
-    /*
-      Occasionally include exactly
-      1,000,000.
-    */
-
-    if (
-      Math.random() <
-      0.02
-    ) {
-
+    if (Math.random() < 0.02) {
       return 1000000;
-
     }
 
-
-    /*
-      Occasionally include zero.
-    */
-
-    if (
-      Math.random() <
-      0.01
-    ) {
-
+    if (Math.random() < 0.01) {
       return 0;
-
     }
-
 
     const random =
       Math.random();
 
-
     let length;
 
-
-    if (
-      random <
-      0.12
-    ) {
-
-      length =
-        2;
-
+    if (random < 0.12) {
+      length = 2;
     }
-
-    else if (
-      random <
-      0.36
-    ) {
-
-      length =
-        3;
-
+    else if (random < 0.36) {
+      length = 3;
     }
-
-    else if (
-      random <
-      0.64
-    ) {
-
-      length =
-        4;
-
+    else if (random < 0.64) {
+      length = 4;
     }
-
-    else if (
-      random <
-      0.84
-    ) {
-
-      length =
-        5;
-
+    else if (random < 0.84) {
+      length = 5;
     }
-
     else {
-
-      length =
-        6;
-
+      length = 6;
     }
 
-
-    const digits =
-      [];
-
+    const digits = [];
 
     let firstDigit;
 
-
     do {
-
       firstDigit =
         weightedDigit();
-
     }
-
     while (
-      firstDigit ===
-      0
+      firstDigit === 0
     );
-
 
     digits.push(
       firstDigit
     );
-
 
     for (
       let index = 1;
       index < length;
       index++
     ) {
-
       digits.push(
         weightedDigit()
       );
-
     }
-
 
     return Number(
       digits.join("")
     );
-
   }
 
-
-  /*
-    ==================================================
-    SYMBOL COUNTS
-    ==================================================
-  */
 
   function getCounts(
     number
@@ -1260,59 +900,38 @@
     const result =
       {};
 
-
     values.forEach(
       value => {
-
-        result[value] =
-          0;
-
+        result[value] = 0;
       }
     );
 
-
     let remaining =
       number;
-
 
     for (
       const value
       of values
     ) {
-
       result[value] =
         Math.floor(
           remaining /
           value
         );
 
-
       remaining %=
         value;
-
     }
 
-
     return result;
-
   }
 
-
-  /*
-    ==================================================
-    RENDER EGYPTIAN NUMERAL
-    ==================================================
-  */
 
   function renderNumeral(
     number
   ) {
 
-    if (
-      number ===
-      0
-    ) {
-
+    if (number === 0) {
       return `
         <div class="zero-display">
 
@@ -1327,19 +946,15 @@
 
         </div>
       `;
-
     }
-
 
     const counts =
       getCounts(
         number
       );
 
-
     const groups =
       [];
-
 
     for (
       const value
@@ -1349,71 +964,48 @@
       const count =
         counts[value];
 
-
       if (
-        count ===
-        0
+        count === 0
       ) {
-
         continue;
-
       }
-
 
       let symbols =
         "";
-
 
       for (
         let index = 0;
         index < count;
         index++
       ) {
-
         symbols +=
           symbolSvg(
             value,
             46
           );
-
       }
-
 
       groups.push(
         `
           <div
             class="symbol-group"
-            title="
-              ${count}
-              ×
-              ${value.toLocaleString("en-US")}
-            ">
+            title="${count} × ${value.toLocaleString("en-US")}">
 
             ${symbols}
 
           </div>
         `
       );
-
     }
 
-
     return groups.join("");
-
   }
 
-
-  /*
-    ==================================================
-    EXPLANATION
-    ==================================================
-  */
 
   function buildExplanation() {
 
     if (
-      targetNumber ===
-      0
+      targetNumber === 0
     ) {
 
       return `
@@ -1429,23 +1021,18 @@
 
         </div>
       `;
-
     }
-
 
     const counts =
       getCounts(
         targetNumber
       );
 
-
     let rows =
       "";
 
-
     const subtotals =
       [];
-
 
     for (
       const value
@@ -1455,98 +1042,67 @@
       const count =
         counts[value];
 
-
       if (
-        count ===
-        0
+        count === 0
       ) {
-
         continue;
-
       }
-
 
       let symbols =
         "";
-
 
       for (
         let index = 0;
         index < count;
         index++
       ) {
-
         symbols +=
           symbolSvg(
             value,
             38
           );
-
       }
-
 
       const subtotal =
         count *
         value;
 
-
       subtotals.push(
         subtotal
       );
-
 
       rows +=
         `
           <div class="break-row">
 
             <div class="row-symbols">
-
               ${symbols}
-
             </div>
-
 
             <div class="row-math">
 
               ${count}
-
               ×
-
-              ${value.toLocaleString(
-                "en-US"
-              )}
-
+              ${value.toLocaleString("en-US")}
               =
-
-              ${subtotal.toLocaleString(
-                "en-US"
-              )}
+              ${subtotal.toLocaleString("en-US")}
 
             </div>
 
           </div>
         `;
-
     }
-
 
     return `
       <div class="explanation">
 
         <div class="explanation-title">
-
-          Count each kind of symbol
-          and add their values:
-
+          Count each kind of symbol and add their values:
         </div>
-
 
         <div class="breakdown">
-
           ${rows}
-
         </div>
-
 
         <div class="sum-box">
 
@@ -1569,111 +1125,74 @@
 
       </div>
     `;
-
   }
 
 
-  /*
-    ==================================================
-    FEEDBACK
-    ==================================================
-  */
-
   function clearFeedback() {
-
     feedback.className =
       "feedback";
 
-
     feedback.innerHTML =
       "";
-
   }
 
-
-  /*
-    ==================================================
-    CHECK ANSWER
-    ==================================================
-  */
 
   function checkAnswer() {
 
     const rawAnswer =
       answerInput.value.trim();
 
-
     if (
       rawAnswer ===
       ""
     ) {
-
       feedback.className =
         "feedback incorrect";
-
 
       feedback.innerHTML =
         `
           <div class="feedback-head">
-
             <strong>
               Enter a number first.
             </strong>
-
           </div>
         `;
 
-
       return;
-
     }
-
 
     const studentAnswer =
       Number(
         rawAnswer
       );
 
-
     if (
       !Number.isInteger(
         studentAnswer
       )
-
       ||
-
-      studentAnswer <
-        0
-
+      studentAnswer < 0
       ||
-
-      studentAnswer >
-        1000000
+      studentAnswer > 1000000
     ) {
 
       feedback.className =
         "feedback incorrect";
-
 
       feedback.innerHTML =
         `
           <div class="feedback-head">
 
             <strong>
-
               Enter a whole number
               from 0 to 1,000,000.
-
             </strong>
 
           </div>
         `;
 
-
       return;
-
     }
-
 
     if (
       studentAnswer ===
@@ -1682,7 +1201,6 @@
 
       feedback.className =
         "feedback correct";
-
 
       feedback.innerHTML =
         `
@@ -1697,23 +1215,17 @@
           )}.
         `;
 
-
       answerInput.disabled =
         true;
-
 
       checkButton.disabled =
         true;
 
-
       return;
-
     }
-
 
     feedback.className =
       "feedback incorrect";
-
 
     feedback.innerHTML =
       `
@@ -1733,77 +1245,50 @@
 
         ${buildExplanation()}
       `;
-
   }
 
-
-  /*
-    ==================================================
-    NEW QUESTION
-    ==================================================
-  */
 
   function newQuestion() {
 
     let number;
 
-
     do {
-
       number =
         generateNumber();
-
     }
-
     while (
       number ===
       previousNumber
     );
 
-
     previousNumber =
       number;
 
-
     targetNumber =
       number;
-
 
     egyptianDisplay.innerHTML =
       renderNumeral(
         targetNumber
       );
 
-
     answerInput.value =
       "";
-
 
     answerInput.disabled =
       false;
 
-
     checkButton.disabled =
       false;
 
-
     clearFeedback();
 
-
     answerInput.focus();
-
   }
 
 
-  /*
-    ==================================================
-    INPUT EVENTS
-    ==================================================
-  */
-
   answerInput.addEventListener(
     "input",
-
     function () {
 
       answerInput.value =
@@ -1812,40 +1297,25 @@
           ""
         );
 
-
       clearFeedback();
-
     }
   );
 
 
   answerInput.addEventListener(
     "keydown",
-
-    function (
-      event
-    ) {
+    function (event) {
 
       if (
         event.key ===
         "Enter"
       ) {
-
         event.preventDefault();
-
         checkAnswer();
-
       }
-
     }
   );
 
-
-  /*
-    ==================================================
-    BUTTON EVENTS
-    ==================================================
-  */
 
   checkButton.addEventListener(
     "click",
@@ -1859,12 +1329,6 @@
   );
 
 
-  /*
-    ==================================================
-    REFERENCE
-    ==================================================
-  */
-
   referenceGrid.innerHTML =
     values
       .map(
@@ -1872,7 +1336,6 @@
           value,
           index
         ) => {
-
           return `
             <div class="reference-item">
 
@@ -1882,24 +1345,15 @@
               )}
 
               <span>
-
                 ${labels[index]}
-
               </span>
 
             </div>
           `;
-
         }
       )
       .join("");
 
-
-  /*
-    ==================================================
-    START
-    ==================================================
-  */
 
   newQuestion();
 
